@@ -14,8 +14,8 @@ import javax.persistence.*;
 public class DetailType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
-    String name;
+    private Integer id;
+    private String name;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "detail_id")
     private Detail detail;

@@ -13,6 +13,7 @@ import java.util.List;
 public interface ProductService {
     ResponseEntity<Result> addProduct(ProductReq productReq);
     ResponseEntity<Product> editProduct(Integer id,ProductReq productReq);
+    ResponseEntity<Result>deleteProduct(Integer id);
     ResponseEntity<List<ProductResponse>> takeProductByCategory(ProductCategoryReq productCategoryReq);
     ResponseEntity<List<ProductResponse>> takeProductTop10();
     ResponseEntity<List<ProductResponse>> takeProductNews();

@@ -3,12 +3,14 @@ package uz.pdp.ecommersapp.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import uz.pdp.ecommersapp.entity.Attachment;
 import uz.pdp.ecommersapp.entity.Categoria;
 import uz.pdp.ecommersapp.entity.Product;
 import uz.pdp.ecommersapp.payload.ProductCategoryReq;
 import uz.pdp.ecommersapp.payload.ProductReq;
 import uz.pdp.ecommersapp.payload.ProductResponse;
 import uz.pdp.ecommersapp.payload.Result;
+import uz.pdp.ecommersapp.repository.AttachmentRepository;
 import uz.pdp.ecommersapp.repository.ProductRepository;
 
 import java.util.*;
@@ -20,6 +22,8 @@ public class ProductServiceImp implements ProductService {
 
     @Autowired
     ProductRepository productRepository;
+    @Autowired
+    AttachmentRepository attachmentRepository;
 
     @Override
     public ResponseEntity<Result> addProduct(ProductReq productReq) {
@@ -29,7 +33,16 @@ public class ProductServiceImp implements ProductService {
         newProduct.setPrice(productReq.getPrice());
         if (productReq.getCategoria() != null) {
             newProduct.setCategoria(productReq.getCategoria());
-            newProduct.setAttachment(productReq.getAttachment());
+            if (productReq.getAttachments() != null) {
+                ArrayList<Attachment> attachments = new ArrayList<>();
+                productReq.getAttachments().forEach(attachment -> {
+                    Optional<Attachment> attachment1 = attachmentRepository.findById(attachment);
+                    if (attachment1.isPresent()) {
+                        attachments.add(attachment1.get());
+                    }
+                });
+                newProduct.setAttachment(attachments);
+            }
             newProduct.setDetails(productReq.getDetails());
             Product savedProduct = productRepository.save(newProduct);
             if (savedProduct != null) {
@@ -57,7 +70,16 @@ public class ProductServiceImp implements ProductService {
             baseProduct.setName(productReq.getName());
             baseProduct.setPrice(productReq.getPrice());
             baseProduct.setDetails(productReq.getDetails());
-            baseProduct.setAttachment(productReq.getAttachment());
+            if (productReq.getAttachments() != null) {
+                ArrayList<Attachment> attachments = new ArrayList<>();
+                productReq.getAttachments().forEach(attachment -> {
+                    Optional<Attachment> attachment1 = attachmentRepository.findById(attachment);
+                    if (attachment1.isPresent()) {
+                        attachments.add(attachment1.get());
+                    }
+                });
+                baseProduct.setAttachment(attachments);
+            }
             baseProduct.setCategoria(productReq.getCategoria());
             Product changedProduct = productRepository.save(baseProduct);
             if (changedProduct != null) {
@@ -68,6 +90,30 @@ public class ProductServiceImp implements ProductService {
 
         } else {
             return ResponseEntity.status(400).build();
+        }
+    }
+
+    @Override
+    public ResponseEntity<Result> deleteProduct(Integer id) {
+        Optional<Product>optional=productRepository.findById(id);
+        Result result=new Result();
+        if (optional.isPresent()){
+            Product product=optional.get();
+            productRepository.delete(product);
+            Product deletedProduct=productRepository.getOne(id);
+            if (deletedProduct==null){
+                result.setSuccess(true);
+                result.setMessage(product.getName()+"successfully deleted");
+                return ResponseEntity.ok(result);
+            }else {
+                result.setSuccess(false);
+                result.setMessage(product.getName()+"not deleted");
+                return ResponseEntity.status(500).body(result);
+            }
+        }else {
+            result.setSuccess(false);
+            result.setMessage("Product not found");
+            return ResponseEntity.status(400).body(result);
         }
     }
 
@@ -109,17 +155,17 @@ public class ProductServiceImp implements ProductService {
             count++;
             if (count == 10) break;
         }
-        if (sendingProduct!=null){
+        if (sendingProduct != null) {
             return ResponseEntity.ok(sendingProduct);
-        }else{
+        } else {
             return ResponseEntity.status(500).build();
         }
     }
 
     @Override
     public ResponseEntity<List<ProductResponse>> takeProductNews() {
-       List<Product> products=productRepository.findBySortedDate();
-       int count=0;
+        List<Product> products = productRepository.findBySortedDate();
+        int count = 0;
         List<ProductResponse> sendingProduct = new ArrayList<>();
         for (int i = 0; i < products.size(); i++) {
             ProductResponse productResponse = new ProductResponse();
@@ -131,9 +177,10 @@ public class ProductServiceImp implements ProductService {
             sendingProduct.add(productResponse);
             count++;
             if (count == 10) break;
-        } if (sendingProduct!=null){
+        }
+        if (sendingProduct != null) {
             return ResponseEntity.ok(sendingProduct);
-        }else{
+        } else {
             return ResponseEntity.status(500).build();
         }
 

@@ -13,6 +13,7 @@ import uz.pdp.ecommersapp.repository.AttachmentRepository;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Iterator;
+import java.util.UUID;
 
 @Service
 public class AttachmentServiceImp implements AttachmentService {
@@ -59,7 +60,7 @@ public class AttachmentServiceImp implements AttachmentService {
     }
 
     @Override
-    public void deleteFile(Integer id) {
+    public void deleteFile(UUID id) {
         attachmentRepository.deleteById(id);
     }
 }

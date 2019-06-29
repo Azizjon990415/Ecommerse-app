@@ -16,7 +16,7 @@ public class Discount {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    Double percentage;
-    Date startDate;
-    Date expireDate;
+    private Double percentage;
+    private Date startDate;
+    private Date expireDate;
 }

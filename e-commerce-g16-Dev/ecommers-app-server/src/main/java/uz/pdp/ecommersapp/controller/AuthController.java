@@ -17,12 +17,15 @@ import uz.pdp.ecommersapp.payload.LoginReq;
 import uz.pdp.ecommersapp.payload.UserReq;
 import uz.pdp.ecommersapp.repository.RoleRepository;
 import uz.pdp.ecommersapp.repository.UserRepository;
+import uz.pdp.ecommersapp.security.CurrentUser;
 import uz.pdp.ecommersapp.security.JwtProvider;
+import uz.pdp.ecommersapp.service.CartService;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import java.net.URI;
 import java.util.Collections;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -41,6 +44,9 @@ public class AuthController {
 
     @Autowired
     JwtProvider jwtProvider;
+
+    @Autowired
+    CartService cartService;
     @RequestMapping(value = "/signin",method = RequestMethod.POST)
     public ResponseEntity<?> signIn(@Valid @RequestBody LoginReq loginReq){
         Authentication authentication = authenticationManager.authenticate(
@@ -50,7 +56,14 @@ public class AuthController {
                 )
         );
         SecurityContextHolder.getContext().setAuthentication(authentication);
+       Optional< User> optionalUser=userRepository.findByUsernameOrEmail(loginReq.getUsername(),loginReq.getUsername());
 
+       if (optionalUser.isPresent()){
+           User user=optionalUser.get();
+
+        cartService.createCart(user);
+
+       }
         String jwt = jwtProvider.generateJwtToken(authentication);
         return ResponseEntity.ok(new JwtResponse(jwt));
     }
@@ -85,4 +98,9 @@ public class AuthController {
 //         response.
         return ResponseEntity.ok().body("User registered successfully!");
     }
+    @GetMapping("/user")
+    public User getUser(@CurrentUser User user){
+        return user;
+    }
+
 }

@@ -36,6 +36,10 @@ public class ProductController {
     public ResponseEntity<List<ProductResponse>> takeProductByCategory(@RequestBody ProductCategoryReq productCategoryReq) {
         return productService.takeProductByCategory(productCategoryReq);
     }
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<Result> deleteProduct(@PathVariable Integer id){
+       return productService.deleteProduct(id);
+    }
 
     @GetMapping("/top")
     public ResponseEntity<List<ProductResponse>> takeProductTop10() {

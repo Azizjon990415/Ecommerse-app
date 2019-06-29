@@ -1,12 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db3b61a0-e5d2-4f25-9a5c-17367dbf45ad" name="Default Changelist" comment="" />
+    <list default="true" id="db3b61a0-e5d2-4f25-9a5c-17367dbf45ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/payload/CartAdressSetReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/payload/CartProductReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/payload/ProductCategoryReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/projection/AdressProjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/projection/DetailProjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/projection/DetailTypeProjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/projection/DiscountProjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/projection/DistrictProjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/projection/IconProjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/projection/PayTypeProjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/projection/RegionProjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/CategoriaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/DiscountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/service/CartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/service/CartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/component/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/component/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/entity/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/entity/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/entity/DetailType.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/entity/DetailType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/entity/Discount.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/entity/Discount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/payload/ProductReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/payload/ProductReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/AdressRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/AdressRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/AttachmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/AttachmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/CartRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/DetailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/DetailRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/DeteilTypeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/DeteilTypeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/DistrictRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/DistrictRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/IconRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/IconRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/PayTypeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/PayTypeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/RegionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/repository/RegionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/service/AttachmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/service/AttachmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/service/AttachmentServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/service/AttachmentServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/service/ProductServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/service/ProductServiceImp.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/component/DataLoader.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/EcommersAppApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,7 +85,98 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Ecommerse-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ecommerse-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ecommerse-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ecommerse-app" type="462c0819:PsiDirectoryNode" />
+              <item name="e-commerce-g16-Dev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ecommerse-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ecommerse-app" type="462c0819:PsiDirectoryNode" />
+              <item name="e-commerce-g16-Dev" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommers-app-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ecommerse-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ecommerse-app" type="462c0819:PsiDirectoryNode" />
+              <item name="e-commerce-g16-Dev" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommers-app-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ecommerse-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ecommerse-app" type="462c0819:PsiDirectoryNode" />
+              <item name="e-commerce-g16-Dev" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommers-app-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ecommerse-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ecommerse-app" type="462c0819:PsiDirectoryNode" />
+              <item name="e-commerce-g16-Dev" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommers-app-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ecommerse-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ecommerse-app" type="462c0819:PsiDirectoryNode" />
+              <item name="e-commerce-g16-Dev" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommers-app-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="uz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ecommerse-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ecommerse-app" type="462c0819:PsiDirectoryNode" />
+              <item name="e-commerce-g16-Dev" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommers-app-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="uz" type="462c0819:PsiDirectoryNode" />
+              <item name="pdp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ecommerse-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ecommerse-app" type="462c0819:PsiDirectoryNode" />
+              <item name="e-commerce-g16-Dev" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommers-app-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="uz" type="462c0819:PsiDirectoryNode" />
+              <item name="pdp" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommersapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ecommerse-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ecommerse-app" type="462c0819:PsiDirectoryNode" />
+              <item name="e-commerce-g16-Dev" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommers-app-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="uz" type="462c0819:PsiDirectoryNode" />
+              <item name="pdp" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommersapp" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Course" />
@@ -31,10 +185,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/e-commerce-g16-Dev" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561816862074" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
@@ -50,6 +205,15 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="EcommersAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ecommers-app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="uz.pdp.ecommersapp.EcommersAppApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -61,30 +225,28 @@
       <option name="presentableId" value="Default" />
       <updated>1561400032331</updated>
       <workItem from="1561400034917" duration="41000" />
+      <workItem from="1561816645465" duration="237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41000" />
+    <option name="totallyTimeSpent" value="278000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Image Layers" />
-      <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Graph Database Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Educational.CheckDetails" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -92,25 +254,45 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Graph Database" />
-      <window_info anchor="right" id="Mongo Explorer" />
-      <window_info anchor="right" id="Json Parser" />
-      <window_info anchor="right" id="Snyk" side_tool="true" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Jms Messenger" />
-      <window_info anchor="right" id="Google Cloud Storage" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Graph Database Console" order="9" />
+      <window_info anchor="bottom" id="Educational.CheckDetails" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Bean Validation" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Mongo Explorer" order="6" />
+      <window_info anchor="right" id="Graph Database" order="7" />
+      <window_info anchor="right" id="Json Parser" order="8" />
+      <window_info anchor="right" id="Snyk" order="9" side_tool="true" />
+      <window_info anchor="right" id="Database" order="10" />
+      <window_info anchor="right" id="Palette&#9;" order="11" />
+      <window_info anchor="right" id="Theme Preview" order="12" />
+      <window_info anchor="right" id="Jms Messenger" order="13" />
+      <window_info anchor="right" id="Google Cloud Storage" order="14" show_stripe_button="false" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/component/DataLoader.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-commerce-g16-Dev/ecommers-app-server/src/main/java/uz/pdp/ecommersapp/EcommersAppApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>

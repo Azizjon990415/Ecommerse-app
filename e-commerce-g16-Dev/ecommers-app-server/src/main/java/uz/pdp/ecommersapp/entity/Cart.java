@@ -19,13 +19,11 @@ public class Cart extends TimeStampedObjectSetDate {
     private Integer id;
     @OneToOne(cascade = CascadeType.ALL)
     User user;
-  boolean isOrdered;
-
-
-  boolean deliverType;
+    private boolean isOrdered;
+    private boolean deliverType;
 
     @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable( name = "cart_product",
+    @JoinTable(name = "cart_product",
             joinColumns = @JoinColumn(name = "cart_id"),
             inverseJoinColumns = @JoinColumn(name = "product_id")
     )

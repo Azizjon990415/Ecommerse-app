@@ -5,7 +5,8 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.stereotype.Repository;
 import uz.pdp.ecommersapp.entity.District;
 import uz.pdp.ecommersapp.entity.Icon;
+import uz.pdp.ecommersapp.projection.IconProjection;
 
-@RepositoryRestResource(path = "/api/icon",excerptProjection = Icon.class )
+@RepositoryRestResource(path = "icon",collectionResourceRel = "district",excerptProjection = IconProjection.class)
 public interface IconRepository extends JpaRepository<Icon,Integer> {
 }

@@ -27,7 +27,7 @@ public class DataLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         if (initialMode.equals("always")) {
-            userRepository.save(new User("superAdmin","superadmin@gmail.com", passwordEncoder.encode("1930"),
+            userRepository.save(new User("superAdmin","superadmin@gmail.com", passwordEncoder.encode("193045"),
                     "Adminstrator",roleRepository.findAll()));
         }
     }
